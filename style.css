@@ -13,6 +13,10 @@
 
 .header {
 	background: tomato;
+	color: green;
+	font-family: 'Anton', sans-serif;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
 
 }
 
@@ -26,6 +30,7 @@ img {
 	width: 338px;
 }
 
+
 .image1{
 	height: 250px;
 	width: 169px;
@@ -33,10 +38,13 @@ img {
 .main {
   text-align: left;
   background: deepskyblue;
+  font-family: 'Lobster', cursive;
+
 }
 
 .aside-1 {
 	background: gold;
+	
 }
 
 @media all and (min-width: 600px) {

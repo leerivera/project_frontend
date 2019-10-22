@@ -1,6 +1,7 @@
 const PRODUCTS_URL = "http://localhost:3000/api/v1/products"
 
 
+
 class Product {
 	constructor(product){
 		this.id = product.id;
@@ -16,12 +17,14 @@ class Product {
 		.then(res => res.json())
 		.then(productsArr => {
 			productsArr.forEach(product => {
+				
 				let p = new Product(product)
 				p.renderProducts()
+
 			})
 		})
 	}
-
+   
 
   renderProducts(){
   	console.log("rendering products")
@@ -33,11 +36,14 @@ class Product {
 
   	article.dataset.id = this.id
 
+    
+
   	let h3 = document.createElement('h3')
   	h3.innerText = this.name
 
   	let imgEl = document.createElement('img')
   	imgEl.src = this.image
+
 
   	let desc = document.createElement('p')
   	desc.innerText = this.description
@@ -51,6 +57,7 @@ class Product {
 
 
   	main.appendChild(article)
+    
   	article.appendChild(h3)
   	article.appendChild(imgEl)
   	article.appendChild(desc)

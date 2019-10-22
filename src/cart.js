@@ -33,8 +33,10 @@ class Cart {
 
 	    aside.classList.add('aside-1')
 
-	    aside.dataset.id = this.id
+	    
 
+	  
+	    
 	    
 
         let h3 = document.createElement('h3')
@@ -56,13 +58,21 @@ class Cart {
 	   	aside.appendChild(img)
 	   	aside.appendChild(h2)
 	   	aside.appendChild(h4)
-	   
+	   	
+	   }
 	}
 
 
+   
+
+	   
+	
+
+ 
 
 
 
 
 
-}
+
+
